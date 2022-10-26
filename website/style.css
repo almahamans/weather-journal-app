@@ -17,6 +17,22 @@ background-color: #f23557;
 color: rgb(232, 240, 247);
 text-align: center;
 font-size: xx-large;
+height: 80%;
+}
+@media screen and (max-width:450px) {
+    .headline{
+    max-width: 20rem;
+    height: 40%;
+    margin-left: 30px;
+    }
+   #feelings{
+    width: 12em;
+    height: 4em;
+   }
+   #zip{
+    width: 280px;
+    height: 40px;
+   }
 }
 .zip{
     display: flex;
@@ -42,17 +58,23 @@ label{
     font-size: 27px;
 }
 
-.zipInput{
-    display:block;
+.zipInput, .zipInputError{
     height: 60px;
     width: 320px;
-    background:#22b2da;
-    color: white;
     font-size: 20px;
     font-family: 'Oswald', sans-serif;
-    border: none;
+    padding: 15px;
 }
-
+.zipInput{
+    border: none;
+    background:#22b2da;
+    color: rgb(220, 220, 220);
+}
+.zipInputError{
+border-color:rgb(242, 64, 64);
+border-width: 4px;
+background:rgb(242, 64, 64);
+}
 button{
     width: 100px;
     height: 50px;
@@ -64,13 +86,26 @@ button{
     box-shadow: 2px 4px 5px #444;
     cursor: pointer;
 }
-.myInput{
-    background:#22b2da;
+.myInput, .textError{
     font-size: 22px;
-    font-family: 'Oswald', sans-serif;
-    color: white;
+    font-family: 'Oswald', sans-serif;  
     width: 20em;
-    height: 6em;
+    height: 6em;   
+    padding: 15px;
+}
+.myInput{
+     background:#22b2da;
+     color: rgb(220, 220, 220);;
+     border: none;
+}
+.textError{
+    background:rgb(242, 64, 64);;
+    border-color: rgb(242, 64, 64);;
+    border-width: 4px;
+}
+.textError:active, .textError:focus, .zipInputError:active, .zipInputError:focus{
+    background-color: #22b2da;
+    color: rgb(220, 220, 220);;
     border: none;
 }
 /* Reset style for HTML element on active to have no border*/
@@ -82,16 +117,28 @@ button:focus {
 }
 /* Style for Placeholder Text*/
 ::placeholder { /* Firefox, Chrome, Opera */ 
-    color: white; 
+    color: rgb(220, 220, 220);; 
     font-family: 'Oswald', sans-serif;
 } 
   
 :-ms-input-placeholder { /* Internet Explorer 10-11 */ 
-    color: white; 
+    color: rgb(220, 220, 220);; 
     font-family: 'Oswald', sans-serif;
 } 
   
 ::-ms-input-placeholder { /* Microsoft Edge */ 
-    color: white; 
+    color: rgb(220, 220, 220);; 
     font-family: 'Oswald', sans-serif;
+}
+/* style to hide number arrows */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input {
+  -moz-appearance: textfield;
 }
