@@ -35,6 +35,8 @@ height: 80%;
    }
    #generate{
     font-size: 21px;
+    text-align: center;
+    padding-right: 5px;
    }
 }
 .zip{
