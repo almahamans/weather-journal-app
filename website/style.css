@@ -33,6 +33,9 @@ height: 80%;
     width: 280px;
     height: 40px;
    }
+   #generate{
+    font-size: 21px;
+   }
 }
 .zip{
     display: flex;
