@@ -8,6 +8,9 @@ The app is responsive for all screen sizes.
 - Custome css style, css Flex, css grid for layout. 
 - JS, api, node js and express to deal with web api such as retrive data and post it in the screen.
 
+## Link
+[App link](https://almahamans.github.io/weather-journal-app/website/index.html)
+
 ### Perpuse
 The perpuse of this project is to complete Udacity course: [front-end web development](https://www.udacity.com/course/front-end-web-developer-nanodegree--nd0011).
 
