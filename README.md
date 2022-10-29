@@ -8,6 +8,10 @@ The app is responsive for all screen sizes.
 - Custome css style, css Flex, css grid for layout. 
 - JS, api, node js and express to deal with web api such as retrive data and post it in the screen.
 
+## Strategy 
+- Used GET and POST methods in express to build server in server side
+- Used fetch method to request data from the server in client side
+
 ## Link
 [App link](https://almahamans.github.io/weather-journal-app/website/index.html)
 
